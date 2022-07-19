@@ -1,0 +1,540 @@
+{
+	"info": {
+		"_postman_id": "48684835-13f6-4b66-85b9-ccdc5796ee45",
+		"name": "Proyecto Final",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "User",
+			"item": [
+				{
+					"name": "Login",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "localhost:3200/user/login",
+							"host": [
+								"localhost"
+							],
+							"port": "3200",
+							"path": [
+								"user",
+								"login"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Register",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": []
+						},
+						"url": {
+							"raw": "localhost:3200/user/register",
+							"host": [
+								"localhost"
+							],
+							"port": "3200",
+							"path": [
+								"user",
+								"register"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"url": {
+							"raw": "localhost:3200/user/update/id",
+							"host": [
+								"localhost"
+							],
+							"port": "3200",
+							"path": [
+								"user",
+								"update",
+								"id"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "localhost:3200/user/delete/id",
+							"host": [
+								"localhost"
+							],
+							"port": "3200",
+							"path": [
+								"user",
+								"delete",
+								"id"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Product",
+			"item": [
+				{
+					"name": "Save",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "\"eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiI2MjI4MDdmNTk1Mzg0NDRjNGNkZmVjYjUiLCJuYW1lIjoiTHVpcyIsInVzZXJuYW1lIjoiTExvcGV6Iiwicm9sZSI6IkFETUlOIiwiaWF0IjoxNjQ2NzkzMDUyLCJleHAiOjE2NDY4MDAyNTJ9.-Uo5m8IXaflYCOpBDuEGXQG-IHuN7L1SJGR7MUsPfrY\"",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "name",
+									"value": "jabon",
+									"type": "text"
+								},
+								{
+									"key": "description",
+									"value": "jabon para manos",
+									"type": "text"
+								},
+								{
+									"key": "price",
+									"value": "4",
+									"type": "text"
+								},
+								{
+									"key": "stock",
+									"value": "10",
+									"type": "text"
+								},
+								{
+									"key": "sales",
+									"value": "2",
+									"type": "text"
+								},
+								{
+									"key": "category",
+									"value": "622812749538444c4cdfecbb",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "localhost:3200/product/saveProduct",
+							"host": [
+								"localhost"
+							],
+							"port": "3200",
+							"path": [
+								"product",
+								"saveProduct"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Product",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": []
+						},
+						"url": {
+							"raw": "localhost:3200/product/getProducts",
+							"host": [
+								"localhost"
+							],
+							"port": "3200",
+							"path": [
+								"product",
+								"getProducts"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Products",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": []
+						},
+						"url": {
+							"raw": "localhost:3200/product/getProduct/id",
+							"host": [
+								"localhost"
+							],
+							"port": "3200",
+							"path": [
+								"product",
+								"getProduct",
+								"id"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Search",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "name",
+									"value": "jabon",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "localhost:3200/product/searchProduct",
+							"host": [
+								"localhost"
+							],
+							"port": "3200",
+							"path": [
+								"product",
+								"searchProduct"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiI2MjI4MDdmNTk1Mzg0NDRjNGNkZmVjYjUiLCJuYW1lIjoiTHVpcyIsInVzZXJuYW1lIjoiTExvcGV6Iiwicm9sZSI6IkFETUlOIiwiaWF0IjoxNjQ2Nzk0MjIyLCJleHAiOjE2NDY4MDE0MjJ9.JnO97MlzIIN8aoxdXERni2X3_xZu322QpBIxP3r-Oec",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "name",
+									"value": "Gel",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "localhost:3200/product/updateProduct/id",
+							"host": [
+								"localhost"
+							],
+							"port": "3200",
+							"path": [
+								"product",
+								"updateProduct",
+								"id"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiI2MjI4MDdmNTk1Mzg0NDRjNGNkZmVjYjUiLCJuYW1lIjoiTHVpcyIsInVzZXJuYW1lIjoiTExvcGV6Iiwicm9sZSI6IkFETUlOIiwiaWF0IjoxNjQ2Nzk0MjIyLCJleHAiOjE2NDY4MDE0MjJ9.JnO97MlzIIN8aoxdXERni2X3_xZu322QpBIxP3r-Oec",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "localhost:3200/product/deleteProduct/6228129b9538444c4cdfecbd",
+							"host": [
+								"localhost"
+							],
+							"port": "3200",
+							"path": [
+								"product",
+								"deleteProduct",
+								"6228129b9538444c4cdfecbd"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Products Tired",
+					"request": {
+						"method": "GET",
+						"header": []
+					},
+					"response": []
+				},
+				{
+					"name": "Products Sold",
+					"request": {
+						"method": "GET",
+						"header": []
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Category",
+			"item": [
+				{
+					"name": "Save",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "\"eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiI2MjI4MDdmNTk1Mzg0NDRjNGNkZmVjYjUiLCJuYW1lIjoiTHVpcyIsInVzZXJuYW1lIjoiTExvcGV6Iiwicm9sZSI6IkFETUlOIiwiaWF0IjoxNjQ2NzkzMDUyLCJleHAiOjE2NDY4MDAyNTJ9.-Uo5m8IXaflYCOpBDuEGXQG-IHuN7L1SJGR7MUsPfrY\"",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "name",
+									"value": "Limpieza",
+									"type": "text"
+								},
+								{
+									"key": "description",
+									"value": "Productos de limpieza",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "localhost:3200/category/saveCategory",
+							"host": [
+								"localhost"
+							],
+							"port": "3200",
+							"path": [
+								"category",
+								"saveCategory"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Categories",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:3200/category/getCategorys",
+							"host": [
+								"localhost"
+							],
+							"port": "3200",
+							"path": [
+								"category",
+								"getCategorys"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "localhost:3200/category/deleteCategoy/id",
+							"host": [
+								"localhost"
+							],
+							"port": "3200",
+							"path": [
+								"category",
+								"deleteCategoy",
+								"id"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update Category",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"url": {
+							"raw": "localhost:3200/category/updateCategory:id",
+							"host": [
+								"localhost"
+							],
+							"port": "3200",
+							"path": [
+								"category",
+								"updateCategory:id"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "ShoopingCar",
+			"item": [
+				{
+					"name": "ADD",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "localhost:3200/car/addCar",
+							"host": [
+								"localhost"
+							],
+							"port": "3200",
+							"path": [
+								"car",
+								"addCar"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Save Shooping",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "localhost:3200/car/saveShooping",
+							"host": [
+								"localhost"
+							],
+							"port": "3200",
+							"path": [
+								"car",
+								"saveShooping"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update Shopping",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiI2MjI5ODc1ZWRkY2VlNmY0MDU1M2I5OWMiLCJuYW1lIjoiRHVsY2UiLCJ1c2VybmFtZSI6IkQxMjMiLCJyb2xlIjoiQURNSU4iLCJpYXQiOjE2NDY4OTczNDQsImV4cCI6MTY0NjkwNDU0NH0.QWX3wJoprBd5Velwnxp1PqpDkzzIez7yZddWbvoJGsI",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": []
+						},
+						"url": {
+							"raw": "localhost:3200/car/updateShopping",
+							"host": [
+								"localhost"
+							],
+							"port": "3200",
+							"path": [
+								"car",
+								"updateShopping"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete Shopping",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "localhost:3200/car/deleteShopping",
+							"host": [
+								"localhost"
+							],
+							"port": "3200",
+							"path": [
+								"car",
+								"deleteShopping"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Bill",
+			"item": [
+				{
+					"name": "Check Bill",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "localhost:3200/bill/checkbill/id",
+							"host": [
+								"localhost"
+							],
+							"port": "3200",
+							"path": [
+								"bill",
+								"checkbill",
+								"id"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
